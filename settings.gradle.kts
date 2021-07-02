@@ -7,4 +7,16 @@ pluginManagement {
 }
 
 rootProject.name = "library-dirty-architecture"
-include("domain")
+include(
+    "domain",
+    "applications",
+    "applications:console",
+    "applications:api",
+    "applications:event-processor",
+    "infras",
+    "infras:jpa",
+    "infras:mongo",
+    "infras:es",
+    "infras:memory",
+    "clients"
+)
